@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Star, Zap } from 'lucide-react';
+import { Sparkles, Star, Zap, MessageCircle } from 'lucide-react';
+
+declare global {
+  interface Window {
+    Tawk_API?: {
+      maximize: () => void;
+      hideWidget: () => void;
+      showWidget: () => void;
+    };
+  }
+}
 
 const marqueeText = "";
 
@@ -43,6 +53,12 @@ function App() {
 
   const handleAppClick = (url: string) => {
     window.open(url, '_blank');
+  };
+
+  const openTawkChat = () => {
+    if (window.Tawk_API) {
+      window.Tawk_API.maximize();
+    }
   };
 
   return (
@@ -154,6 +170,15 @@ function App() {
 
         <div className="h-2 bg-gradient-to-r from-blue-600 via-cyan-500 via-teal-500 via-yellow-500 to-orange-500"></div>
       </div>
+
+      <button
+        onClick={openTawkChat}
+        className="fixed bottom-6 right-6 bg-[#03a84e] hover:bg-[#028a3f] text-white rounded-full p-4 shadow-2xl hover:shadow-[#03a84e]/50 transition-all duration-300 transform hover:scale-110 z-50 flex items-center gap-2 group"
+        aria-label="在线客服"
+      >
+        <MessageCircle size={24} className="group-hover:animate-bounce" />
+        <span className="font-bold text-sm whitespace-nowrap">在线客服</span>
+      </button>
     </div>
   );
 }
