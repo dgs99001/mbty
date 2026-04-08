@@ -19,7 +19,7 @@ const apps = [
     name: "米兰体育",
     description: "",
     iconUrl: "https://pic1.imgdb.cn/item/699c510a7aea005f38310220.jpg",
-    url: "https://www.pr9oj0.vip:9037/entry/register27248/?i_code=321944933",
+    url: "https://www.k01ft6.vip:6001/entry/register85450/?i_code=321944933",
   },
      {
     id: 2,
@@ -33,7 +33,7 @@ const apps = [
     name: "开云体育",
     description: "",
     iconUrl: "https://pic1.imgdb.cn/item/699c51217aea005f38310225.jpg",
-    url: "https://www.vwqv2s.vip:9663/entry/register79049/?i_code=94491262",
+    url: "https://www.1ijlp6.vip:7988/entry/register80735/?i_code=94491262",
   },
  
   
