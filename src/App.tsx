@@ -33,7 +33,7 @@ const apps = [
     name: "开云体育",
     description: "",
     iconUrl: "https://pic1.imgdb.cn/item/699c51217aea005f38310225.jpg",
-    url: "https://www.1ijlp6.vip:7988/entry/register80735/?i_code=94491262",
+    url: "https://www.hw4v92.vip:8003/entry/register70169/?i_code=94491262",
   },
  
   
